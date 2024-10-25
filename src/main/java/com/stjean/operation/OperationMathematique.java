@@ -18,4 +18,13 @@ public class OperationMathematique {
         Arrays.sort(lists, (a, b) -> b - a);
         return lists;
     }
+    public static double maxNumba(double[] values) {
+        double max = Double.NEGATIVE_INFINITY;
+        for (double value : values) {
+            if (value > max) {
+                max = value;
+            }
+        }
+        return max;
+    }
 }
