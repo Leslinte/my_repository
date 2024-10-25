@@ -1,5 +1,7 @@
 package com.stjean.operation;
 
+import java.util.Arrays;
+
 public class OperationMathematique {
     public boolean estPositif(int nombre) {
         return nombre > 0;
@@ -12,5 +14,8 @@ public class OperationMathematique {
         }
         return result;
     }
-
+    public Integer[] sort(Integer[] lists) {
+        Arrays.sort(lists, (a, b) -> b - a);
+        return lists;
+    }
 }
