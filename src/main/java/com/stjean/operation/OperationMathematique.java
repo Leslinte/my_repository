@@ -14,7 +14,7 @@ public class OperationMathematique {
         }
         return result;
     }
-    public Integer[] sort(Integer[] lists) {
+    public static Integer[] sort(Integer[] lists) {
         Arrays.sort(lists, (a, b) -> b - a);
         return lists;
     }

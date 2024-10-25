@@ -25,6 +25,12 @@ public class TestOperationMathematique {
         }
     }
 
-
-
+    @Test
+    public void testSort() {
+        Integer[] input = {3, 1, 4, 1, 5};
+        Integer[] expected = {5, 4, 3, 1, 1};
+        assertArrayEquals(expected, OperationMathematique.sort(input));
+    }
 }
+
+
